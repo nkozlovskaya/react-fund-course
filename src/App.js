@@ -39,19 +39,14 @@ function App() {
 	return (
 		<div className="App">
 			<PostForm create={createPost} />
-			<div>
-				<hr style={{ margin: "15px 0" }} />
-				<PostFilter filter={filter} setFilter={setFilter} />
-			</div>
-			{sortedAndSearchedPosts.length !== 0 ? (
-				<PostList
-					remove={removePost}
-					posts={sortedAndSearchedPosts}
-					title="Посты про JS"
-				/>
-			) : (
-				<h1 style={{ textAlign: "center" }}> Посты не найдены</h1>
-			)}
+			<hr style={{ margin: "15px 0" }} />
+			<PostFilter filter={filter} setFilter={setFilter} />
+
+			<PostList
+				remove={removePost}
+				posts={sortedAndSearchedPosts}
+				title="Посты про JS"
+			/>
 		</div>
 	);
 }
