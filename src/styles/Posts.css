@@ -6,7 +6,8 @@
 
 #root {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App {
@@ -16,7 +17,7 @@
 .post {
   display: flex;
   padding: 15px;
-  border: 2px solid magenta;
+  border: 2px solid blue;
   margin-top: 15px;
   justify-content: space-between;
   align-items: center;
@@ -45,11 +46,11 @@
 
 .page {
   padding: 10px;
-  border: 2px solid magenta;
+  border: 2px solid blue;
   cursor: pointer
 }
 
 .page__current {
-  border: 2px solid blue;
+  border: 2px solid magenta;
   font-weight: bold;
 }
